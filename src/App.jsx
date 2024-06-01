@@ -1,11 +1,16 @@
 import './App.scss'
+import { PosterOverlay } from './components/poster-overlay/poster-overlay'
+import { Home } from './router/home/home'
+import { Navigation } from './router/navigation/navigation'
+import { SaleCellar } from './router/sale-cellar/sale-cellar'
 
 export function App() {
     return (
     <>
-      <div>
-        Projeto Adega Online
-      </div>
+    <Navigation />
+    <Home />
+    <PosterOverlay />
+    <SaleCellar />
     </>
   )
 }
