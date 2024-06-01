@@ -1,4 +1,5 @@
 import './App.scss'
+import { Footer } from './components/footer/footer'
 import { PosterOverlay } from './components/poster-overlay/poster-overlay'
 import { Home } from './router/home/home'
 import { Navigation } from './router/navigation/navigation'
@@ -11,6 +12,7 @@ export function App() {
     <Home />
     <PosterOverlay />
     <SaleCellar />
+    <Footer />
     </>
   )
 }

@@ -1,0 +1,36 @@
+.footer-container {
+    display: flex;
+    flex-direction: row;
+    gap: 100px;
+    border-top: 1px solid #672042;
+    margin: 30px 60px 30px 60px;
+    padding: 20px 0 20px 0;
+
+    .contact {
+        width: 33%;
+    }
+
+    .footer-title {
+        font-weight: 600;
+        padding-bottom: 10px;
+    }
+
+    .payment {
+        width: 33%;
+
+        .image-logos {
+            display: flex;
+            flex-direction: row;
+            gap: 20px;
+            flex-wrap: wrap;
+
+            .payment-logo {
+                width: 50px;
+            }
+        }
+    }
+
+    .homework {
+        width: 33%;
+    }
+}
