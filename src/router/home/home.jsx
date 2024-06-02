@@ -1,4 +1,7 @@
 import { Categories } from "../../components/categories/categories"
+import { Footer } from "../../components/footer/footer"
+import { PosterOverlay } from "../../components/poster-overlay/poster-overlay"
+import { SaleCellar } from "../sale-cellar/sale-cellar"
 
 const categories = [
     {
@@ -21,8 +24,11 @@ const categories = [
 
 export function Home() {
 return (
-    <div>
+    <>
     <Categories categories={categories} />
-    </div>
+    <PosterOverlay />
+    <SaleCellar />
+    <Footer />
+    </>
 )    
 }
