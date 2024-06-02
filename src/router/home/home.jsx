@@ -14,11 +14,15 @@ const categories = [
     },
     {
         "id": 3,
-        "title": "ESPUMANTES"
+        "title": "VINHO ESPUMANTES"
     },
     {
         "id": 4,
-        "title": "KITS"
+        "title": "VINHO ROSE"
+    },
+    {
+        "id": 5,
+        "title": "VINHO VERDE"
     }
 ]
 

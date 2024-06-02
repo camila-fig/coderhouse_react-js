@@ -3,11 +3,26 @@
     display: flex;
     align-items: center;
     justify-content: space-around;
-margin-bottom: 50px;
-   
+    margin-bottom: 50px;
+
 }
-.title-category{
+
+.title-category {
     margin-left: 10%;
-   
+
     font-size: 30px;
+}
+
+@media(max-width: 400px) {
+
+    .wine-categories {
+        flex-wrap: wrap;
+        row-gap: 15px;
+    }
+
+    .title-category {
+        margin-left: 30%;
+
+    }
+
 }
