@@ -1,3 +1,4 @@
+import { Outlet } from 'react-router-dom'
 import barril from '../../assets/barril.png'
 import pesquisar from '../../assets/search.png'
 import { CartIcon } from '../../components/cart-icon/cart-icon'
