@@ -1,0 +1,13 @@
+.cart-container {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+
+    .cart-text {
+        font-weight: 600;
+    }
+
+    .cart-icon {
+        width: 28px;
+    }
+}
