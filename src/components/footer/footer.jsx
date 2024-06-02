@@ -19,19 +19,19 @@ export function Footer() {
             <div className="payment">
                 <p className='footer-title'>Formas de Pagamento</p>
                 <div className="image-logos">
-                <img className='payment-logo' src={Visa} alt="" />
-                <img className='payment-logo' src={Mastercard} alt="" />
-                <img className='payment-logo' src={Hipercard} alt="" />
-                <img className='payment-logo' src={Elo} alt="" />
-                <img className='payment-logo' src={America} alt="" />
-                <img className='payment-logo' src={Pix} alt="" />
-                <img className='payment-logo' src={Boleto} alt="" />
+                <img className='payment-logo' src={Visa} alt="Visa" />
+                <img className='payment-logo' src={Mastercard} alt="Mastercard" />
+                <img className='payment-logo' src={Hipercard} alt="Hipercard" />
+                <img className='payment-logo' src={Elo} alt="Elo" />
+                <img className='payment-logo' src={America} alt="America Express" />
+                <img className='payment-logo' src={Pix} alt="Pix" />
+                <img className='payment-logo' src={Boleto} alt="Boleto bancário" />
                 </div>
             </div>
             <div className="homework">
                 <p className='footer-title'>Projeto Coder House</p>
                 <p>Esta página não é real. </p>
-                <p>  Refere-se ao projeto final realizado para o curso de React Js 2024.</p>
+                <p>É referente ao projeto final realizado para o curso de React JS 2024.</p>
             </div>
         </div>
     )
