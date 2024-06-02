@@ -1,6 +1,12 @@
 .container-auth {
     display: flex;
+    gap: 100px;
     width: 900px;
-    justify-content: space-between;
-    margin: 30px auto;
+    margin-top: 100px;
+    margin-bottom: 100px;
+
+    .auth-image {
+      width: 300px;
+      border-radius: 0 500px 500px 0;
+    }
   }

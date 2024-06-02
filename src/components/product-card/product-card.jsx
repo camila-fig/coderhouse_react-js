@@ -14,7 +14,6 @@ export function ProductCard({product}){
             </div>
             <br />
             <button className="btn-add-cart">Adicionar ao carrinho</button>
-
         </div>
     )
 }

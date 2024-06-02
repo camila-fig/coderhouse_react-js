@@ -4,7 +4,7 @@ export function PosterOverlay() {
     return(
         <div className="container-poster">
         <div className="poster-title">
-            BEM VINDO A NOSSA LOJA DE VINHOS ONLINE
+            BEM-VINDO A NOSSA LOJA DE VINHOS ON-LINE
         </div>
         <div className="poster-subtitle">
             <p className="poster-subtitle-text1">FRETE GRÁTIS PARA REGIÃO SUL E SUDESTE</p>

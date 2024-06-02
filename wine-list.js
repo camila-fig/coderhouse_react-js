@@ -1,6 +1,3 @@
-
-
-
 export const WINE_LIST = [
   {
     title: 'tinto',
