@@ -12,7 +12,7 @@ export function ProductCard({product}){
                 <br />
                 <span className="price-wine">{`R$ ${price},00`}</span>
             </div>
-
+            <br />
             <button className="btn-add-cart">Adicionar ao carrinho</button>
 
         </div>
