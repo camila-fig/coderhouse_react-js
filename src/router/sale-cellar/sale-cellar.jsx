@@ -1,3 +1,4 @@
+import { Footer } from '../../components/footer/footer'
 import './sale-cellar.scss'
 
 export function SaleCellar(){
@@ -5,6 +6,9 @@ export function SaleCellar(){
         <div className="container-cellar">
             <p className="cellar-title">Best Sellers</p>
             <p className="cellar-subtitle">Conheça os rótulos mais vendidos</p>
+        <div>
+            <Footer />
+        </div>
         </div>
     )
 }
