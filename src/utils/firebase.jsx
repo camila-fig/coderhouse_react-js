@@ -27,7 +27,7 @@ export const addCollentionAdDocuments = async (collentionKey, objectsToAdd) => {
 }
 
 export const getCategoriesAndDocuments = async () => {
-  const collectionRef = collection(db, 'categories')
+  const collectionRef = collection(db, 'categorias')
   const q = query(collectionRef)
   
   const querySnapShot = await getDocs(q)
