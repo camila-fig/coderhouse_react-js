@@ -1,0 +1,80 @@
+.navigation {
+    padding-left: 20px;
+    padding-right: 70px;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #672042;
+    position: fixed;
+    background-color: white;
+    top: 0px;
+    z-index: 50;
+    width: 100%;
+    justify-content: space-between;
+
+    .nav-logo {
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+
+        .nav-logo-image {
+            width: 70px;
+        }
+
+        .store-name {
+            line-height: 1.8em;
+
+            .store-name-adega {
+                color: rgb(72, 72, 72);
+                font-size: 30px;
+                font-family: "Oleo Script Swash Caps", system-ui;
+                font-weight: 400;
+                font-style: normal;
+                padding-left: 15px;
+            }
+
+            .store-name-online {
+                color: rgb(72, 72, 72);
+                font-size: 30px;
+                font-family: "Oleo Script Swash Caps", system-ui;
+                font-weight: 400;
+                font-style: normal;
+                padding-left: 40px;
+                padding-right: 15px;
+            }
+        }
+    }
+
+    .nav-search {
+        width: 350px;
+        padding: 2px;
+        background-color: white;
+        border: 1px rgb(72, 72, 72) solid;
+        border-radius: 10px;
+        display: flex;
+        justify-content: space-around;
+
+        .nav-search-text {
+            width: 300px;
+            border: none;
+        }
+
+        .nav-icon-search {
+            cursor: pointer;
+            width: 25px;
+        }
+
+        input::placeholder {
+            color: lightgray;
+        }
+    }
+
+    .icon-container {
+        display: flex;
+        gap: 150px;
+
+        .nav-link {
+            cursor: pointer;
+            font-weight: 600;
+        }
+    }
+}
