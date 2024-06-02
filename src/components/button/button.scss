@@ -1,0 +1,28 @@
+button {
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    text-transform: uppercase;
+    justify-content: center;
+    padding: 2px;
+    font-weight: 800;
+    width: 100%;
+    background-color: #ffaa50;
+    color: white;
+    border: solid 1px #ffaa50;
+    border-radius: 5px;
+    padding: 10px;
+
+    &.google-sign-in {
+        border: solid 1px #4285f4;
+        background-color: #4285f4;
+
+        &:hover {
+            background-color: #1663de;
+        }
+    }
+
+    &:hover {
+        background-color: #eb861c;
+    }
+}
