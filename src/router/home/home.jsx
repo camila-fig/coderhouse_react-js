@@ -10,15 +10,19 @@ const categories = [
     },
     {
         "id": 2,
-        "title": "VINHO TINTO"
+        "title": "VINHO VERDE"
     },
     {
         "id": 3,
-        "title": "ESPUMANTES"
+        "title": "VINHO TINTO"
     },
     {
         "id": 4,
-        "title": "KITS"
+        "title": "VINHO ROSÉ"
+    },
+    {
+        "id": 5,
+        "title": "ESPUMANTE"
     }
 ]
 
