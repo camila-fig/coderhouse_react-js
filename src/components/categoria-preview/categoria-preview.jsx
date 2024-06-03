@@ -21,7 +21,7 @@ export function CategorisPreview() {
         getCategories()
     }, [])
 
-    console.log(categories)
+    // console.log(categories)
 
     return (
         <>
