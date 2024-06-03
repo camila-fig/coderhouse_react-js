@@ -1,6 +1,6 @@
 export const WINE_LIST = [
   {
-    title: 'tinto',
+    title: 'Vinho Tinto',
     items: [
       {
         id: 1,
@@ -54,7 +54,7 @@ export const WINE_LIST = [
     ],
   },
   {
-    title: 'rose',
+    title: 'Vinho Rose',
     items: [
       {
         id: 9,
@@ -120,7 +120,7 @@ export const WINE_LIST = [
     ],
   },
   {
-    title: 'espumante',
+    title: 'Espumante',
     items: [
     
       {
@@ -157,13 +157,10 @@ export const WINE_LIST = [
         imageUrl: 'https://github.com/AndersonSantosFernandes/wineList/blob/main/espumante%20vertice%20pinot.png?raw=true',
         price: 150,
       },
-
-    
-
     ],
   },
   {
-    title: 'branco',
+    title: 'Vinho Branco',
     items: [
      
       {
@@ -206,7 +203,7 @@ export const WINE_LIST = [
     ],
   },
   {
-    title: 'verde',
+    title: 'Vinho Verde',
     items: [
      
       {
@@ -233,7 +230,3 @@ export const WINE_LIST = [
     ],
   },
 ];
-
-
-
-
