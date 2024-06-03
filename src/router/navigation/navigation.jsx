@@ -4,6 +4,31 @@ import { CartIcon } from '../../components/cart-icon/cart-icon'
 import barril from '../../assets/barril.png'
 import pesquisar from '../../assets/search.png'
 import './navigation.scss'
+import { Categories } from '../../components/categories/categories'
+
+
+const categories = [
+    {
+        "id": 1,
+        "title": "branco"
+    },
+    {
+        "id": 2,
+        "title": "verde"
+    },
+    {
+        "id": 3,
+        "title": "tinto"
+    },
+    {
+        "id": 4,
+        "title": "rose"
+    },
+    {
+        "id": 5,
+        "title": "espumante"
+    }
+]
 
 export function Navigation() {
     return (
@@ -28,6 +53,9 @@ export function Navigation() {
                 </div>
                 <CartIcon />
             </div>
+
+                <Categories categories={categories}/>
+
             <Outlet />
         </>
     )
