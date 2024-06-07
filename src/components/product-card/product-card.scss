@@ -1,5 +1,6 @@
 .wine-image-product-card {
 
+
     width: 250px;
     height: 370px;
     background-color: white;
@@ -24,10 +25,12 @@
         transition: all .5s;
     }
 
+
     .btn-add-cart:hover {
         color: rgb(224, 202, 202);
         box-shadow: 0px 0px 5px white inset;
     }
+
 
 }
 
@@ -45,5 +48,6 @@
 
 
     }
+
 
 }

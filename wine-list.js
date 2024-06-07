@@ -49,8 +49,7 @@ export const WINE_LIST = [
         name: 'Vegano Montgras',
         imageUrl: 'https://github.com/AndersonSantosFernandes/wineList/blob/main/tinto%20vegano%20montgras.png?raw=true',
         price: 198,
-      },
-     
+      },     
     ],
   },
   {
@@ -116,124 +115,99 @@ export const WINE_LIST = [
         imageUrl: 'https://github.com/AndersonSantosFernandes/wineList/blob/main/rose%20veuve%20clicqut%20ice.png?raw=true',
         price: 310,
       },
-
     ],
   },
   {
     title: 'espumante',
-    items: [
-    
+    items: [    
       {
         id: 19,
         name: 'Cerro da Cruz',
         imageUrl: 'https://github.com/AndersonSantosFernandes/wineList/blob/main/espumante%20cerro%20da%20cruz%20nature.png?raw=true',
         price: 210,
       },
-
       {
         id: 20,
         name: 'Magno Extra',
         imageUrl: 'https://github.com/AndersonSantosFernandes/wineList/blob/main/espumante%20magno%20extra.png?raw=true',
         price: 270,
       },
-
       {
         id: 21,
         name: 'Salton Domenico',
         imageUrl: 'https://github.com/AndersonSantosFernandes/wineList/blob/main/espumante%20salton%20domenico.png?raw=true',
         price: 210,
       },
-
       {
         id: 22,
         name: 'Vertice Brut',
         imageUrl: 'https://github.com/AndersonSantosFernandes/wineList/blob/main/espumante%20vertice%20brut.png?raw=true',
         price: 110,
       },
-
       {
         id: 23,
         name: 'Vertice Pinot',
         imageUrl: 'https://github.com/AndersonSantosFernandes/wineList/blob/main/espumante%20vertice%20pinot.png?raw=true',
         price: 150,
       },
-
-    
-
     ],
   },
   {
     title: 'branco',
-    items: [
-     
+    items: [     
       {
         id: 24,
         name: 'Chandon Excelence',
         imageUrl: 'https://github.com/AndersonSantosFernandes/wineList/blob/main/branco_chandon%20excelence.png?raw=true',
         price: 380,
       },
-
       {
         id: 25,
         name: 'Dom Perignon',
         imageUrl: 'https://github.com/AndersonSantosFernandes/wineList/blob/main/branco_dom%20perignon.png?raw=true',
         price: 299,
       },
-
       {
         id: 26,
         name: 'Serro da Cruz',
         imageUrl: 'https://github.com/AndersonSantosFernandes/wineList/blob/main/branco_serro%20da%20cruz.png?raw=true',
         price: 210,
       },
-
       {
         id: 27,
         name: 'Terrazas de los Andes',
         imageUrl: 'https://github.com/AndersonSantosFernandes/wineList/blob/main/branco_tereza%20de%20los%20andes.png?raw=true',
         price: 210,
       },
-
       {
         id: 28,
         name: 'Vegano Freixenet',
         imageUrl: 'https://github.com/AndersonSantosFernandes/wineList/blob/main/branco_vegano%20freixenet.png?raw=true',
         price: 318,
       },
-
-
-
     ],
   },
   {
     title: 'verde',
-    items: [
-     
+    items: [     
       {
         id: 29,
         name: 'Cabo da Roca',
         imageUrl: 'https://github.com/AndersonSantosFernandes/wineList/blob/main/verde%20cabo%20da%20roca%20loureiro.png?raw=true',
         price: 218,
       },
-
       {
         id: 30,
         name: 'Cabo da Roca Verdelho',
         imageUrl: 'https://github.com/AndersonSantosFernandes/wineList/blob/main/verde%20cabo%20da%20roca%20verdelho.png?raw=true',
         price: 318,
       },
-
       {
         id: 31,
         name: 'Moscato Limão Siciliano',
         imageUrl: 'https://github.com/AndersonSantosFernandes/wineList/blob/main/verde%20moscato%20limao%20siciliano.png?raw=true',
         price: 318,
       },
-
     ],
   },
 ];
-
-
-
-
