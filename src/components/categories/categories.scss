@@ -4,6 +4,18 @@
     padding-left: 10%;
     padding-right: 10%;
     margin-top: 61px;
-    justify-content: center;
-    gap: 100px;
+
+}
+
+@media(max-width: 400px){
+
+    .categories-container {
+        display: flex;
+        background-color: #672042;
+        padding-left: 5%;
+        padding-right: 10%;
+        
+    }
+
+
 }

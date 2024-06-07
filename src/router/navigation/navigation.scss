@@ -79,3 +79,45 @@
         }
     }
 }
+
+
+@media(max-width: 400px){
+
+    .navigation {
+        width: 100%;
+        padding-left: 5px;
+        padding-right: 10px;    
+      
+        .nav-logo {
+               
+          
+    
+            .store-name {
+                    
+                .store-name-adega {
+                    display: none;
+                    
+                }
+    
+                .store-name-online {
+                   display: none;
+                }
+            }
+        }
+    
+        .nav-search {
+           display: none;         
+    
+            input::placeholder {
+                color: lightgray;
+            }
+        }
+      
+        .icon-container {
+            display: flex;
+            gap: 15px;    
+           
+        }
+    }
+
+}

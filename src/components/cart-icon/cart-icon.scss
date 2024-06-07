@@ -11,3 +11,22 @@
         width: 28px;
     }
 }
+
+@media(max-width: 400px){
+
+    .cart-container {
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+    
+        .cart-text {
+            font-weight: 600;
+            margin-right: 10px;
+        }
+    
+        .cart-icon {
+            width: 28px;
+        }
+    }
+
+}
