@@ -24,7 +24,7 @@ export function SignIn() {
     }
 
     return (
-        <div>
+        <div className="sign-in-container">
             <p className="form-title">Você já possui conta?</p>
             <form className="form-container" onSubmit={handleSubmit}>
                 <FormInput

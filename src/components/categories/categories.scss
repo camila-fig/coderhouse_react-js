@@ -5,3 +5,15 @@
     padding-right: 10%;
     margin-top: 61px;
 }
+
+@media(max-width: 400px){
+
+    .categories-container {
+        display: flex;
+        background-color: #672042;
+        padding-left: 5%;
+        padding-right: 10%;
+        
+    }
+
+}
