@@ -1,16 +1,34 @@
 .main-categories {
     padding-top: 40px;
-
-.wine-categories {
     width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-bottom: 50px;
+
+    .wine-categories {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 50px;
+    }
+
+    .title-category {
+        font-size: 20px;
+        font-weight: 600;
+    }
 }
 
-.title-category {
-    font-size: 20px;
-    font-weight: 600;
-}
+@media(max-width:400px) {
+
+
+    .wine-categories {
+        width: 100%;
+        height: max-content;
+        display: flex;
+        flex-wrap: wrap;
+     
+        .wine-image-product-card{
+            margin: auto;
+            margin-bottom: 10px;
+        }
+    }
+
 }
