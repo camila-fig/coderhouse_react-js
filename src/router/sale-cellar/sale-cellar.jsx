@@ -6,7 +6,7 @@ export function SaleCellar(){
         <div className="container-cellar">
             <p className="cellar-title">Best Sellers</p>
             <p className="cellar-subtitle">Conheça os rótulos mais vendidos</p>
-            <div>
+            <div className='categories-preview-cellar'>
                 <CategorisPreview />
             </div>
         </div>

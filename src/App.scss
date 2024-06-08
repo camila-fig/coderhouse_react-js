@@ -1,10 +1,8 @@
 
-@media(max-Width) {
+@media(max-Width:400px) {
 
-    body {
-        width: 100%;
-        background-color: aqua;
-    }
-
-
+#root{
+    width: 100%;
 }
+  
+  }
