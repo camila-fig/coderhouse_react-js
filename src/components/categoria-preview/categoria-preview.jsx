@@ -1,33 +1,26 @@
-import { useEffect, useState } from "react"
-import { addCollentionAdDocuments, getCategoriesAndDocuments } from "../../utils/firebase"
-import { WINE_LIST } from "../../../wine-list"
+
+
+import { useContext } from "react"
+import { CategoriesContext } from "../../context/categoriesContext"
 import { CategoryPreview } from "../category-preview/category-preview"
 
 export function CategorisPreview() {
 
-    const [categories, setCategories] = useState({})
+
 
     //Executa o salvamento no firebase
     // useEffect(() =>{
     // addCollentionAdDocuments('categorias', WINE_LIST)
     // },[])
 
-    useEffect(() => {
-        const getCategories = async () => {
-            const category = await getCategoriesAndDocuments()
-            // console.log(category)
-            setCategories(category)
-        }
-        getCategories()
-    }, [])
 
-    // console.log(categories)
+    const { categoriesMap } = useContext(CategoriesContext)
 
     return (
         <>
             {
-                Object.keys(categories).map(title => {
-                    const products = categories[title]
+                Object.keys(categoriesMap).map(title => {
+                    const products = categoriesMap[title]
 
                     return (
                         <CategoryPreview key={title} title={title} products={products} />

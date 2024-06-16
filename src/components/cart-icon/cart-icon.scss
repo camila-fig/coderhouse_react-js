@@ -1,6 +1,9 @@
 .cart-container {
     display: flex;
     align-items: center;
+    justify-content: center;
+    position: relative;
+
     cursor: pointer;
 
     .cart-text {
@@ -8,7 +11,15 @@
     }
 
     .cart-icon {
-        width: 28px;
+        width: 35px;
+    }
+
+    .item-count{
+        position: absolute;
+        font-size: 12px;
+        font-weight: bold;
+        left: 77px;
+        top: 4px;
     }
 }
 
