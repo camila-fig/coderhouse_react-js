@@ -5,6 +5,9 @@ import barril from '../../assets/barril.png'
 import pesquisar from '../../assets/search.png'
 import './navigation.scss'
 import { Categories } from '../../components/categories/categories'
+import { CartDropdown } from '../../components/cart-dropdown/cart-dropdown'
+import { useContext } from 'react'
+import { CartContext } from '../../context/cartContext'
 
 
 const categories = [
@@ -30,7 +33,10 @@ const categories = [
     }
 ]
 
-export function Navigation() {
+export function Navigation() { 
+
+const {isCartOpen} = useContext(CartContext) 
+
     return (
         <>
             <div className="navigation">
@@ -52,6 +58,9 @@ export function Navigation() {
                     <NavLink to="/auth" className="nav-link">Entrar</NavLink>
                 </div>
                 <CartIcon />
+                
+                {/* faz o dropdown aparecer e sumir */}
+                {isCartOpen && <CartDropdown/>}
             </div>
 
                 <Categories categories={categories}/>
