@@ -1,15 +1,18 @@
 
 import './cart-item.scss'
 
-export function CartItem(){
+export function CartItem({ cartItem }){
+
+const{name, quantity, imageUrl, price} = cartItem
+
     return(
         <div className='cart-item-container'>
-            <img src="https://github.com/AndersonSantosFernandes/wineList/blob/main/branco_vegano%20freixenet.png?raw=true" alt="" />
+            <img src={imageUrl} alt="" />
             <div className='item-details'>
-                <span className='name'>Produto 1</span>
-                <span className='price'>4 x 5</span>
+                <span className='name'>{name}</span>
+                <span className='price'>{quantity} x {price}</span>
             </div>
-            <span>2</span>
+            
         </div>
         
     )
