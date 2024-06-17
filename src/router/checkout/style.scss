@@ -1,13 +1,13 @@
- 
+ .checout-container {
+     padding: 10px;
+text-align: center;
+     .header {
+         display: flex;
+     }
 
- .checout-container{
-
-.header{
-    display: flex;
-}
-.total-pay{
-    font-size: 20px;
-    font-weight: bold;
-    
-}
+     .total-pay {
+         font-size: 20px;
+         font-weight: bold;
+         margin-top: 20px;
+     }
  }
