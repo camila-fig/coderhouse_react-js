@@ -11,8 +11,10 @@ console.log(cartItems)
 
     return(
         <div className='checout-container'>
-            <span className='total-pay'>Total a pagar: R$ {cartTotal},00</span>
-                       {
+            
+            <span className='total-pay'>Valor total da compra: R$ {cartTotal},00</span>
+            <br /><br />   
+                    {
 
                 cartItems.map((cartItem) => <CheckoutItem cartItem={cartItem} key={cartItem.id}/>)
             }
