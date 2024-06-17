@@ -20,7 +20,7 @@ const addProductToCart = () => addItemToCart(product)
             </div>
             <br />
             <button className="btn-add-cart" onClick={addProductToCart}>Adicionar ao carrinho</button>
-            <ItemCount />
+            {/* <ItemCount /> */}
         </div>
     )
 }
