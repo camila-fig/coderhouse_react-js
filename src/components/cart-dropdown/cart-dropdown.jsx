@@ -8,7 +8,9 @@ import "./cart-dropdown.scss"
 
 export function CartDropdown(){
 
-const {cartItems} = useContext(CartContext)
+    
+
+const {cartItems, cartTotal} = useContext(CartContext)
 const navigate = useNavigate()
 const goToCheckout = () => {
 navigate('/checkout')
@@ -29,6 +31,9 @@ return(
        }
     </div>
     <Button onClick={goToCheckout} >Checkout</Button>
+<br />
+<hr />
+    <span className='total-pay'>Total: R$ {cartTotal},00</span>
 </div>
 
 )

@@ -11,12 +11,23 @@
 
     .img-box {
         width: 200px;
-
-
+        height: 95%;
+        background-color: white;
+        border-radius: 15px;
+        box-shadow: 0px 0px 3px purple inset;
         img {
             width: 100%;
+            height: 95%;
         }
     }
+
+    .name-prod, .price-prod{
+        width: 200px;
+        font-size: 25px;
+        // box-shadow: 0px 0px 3px purple inset;  
+        font-weight: bold;
+    }
+
 
     .quantity{
         font-size: 25px;
@@ -48,7 +59,7 @@
         // margin-bottom: 10px;
         // box-shadow: 0px 0px 3px purple inset;
         // border-radius: 15px;
-        padding: 0px 5px;
+        padding: 5px;
 
         .img-box {
             width: 100px;
@@ -60,12 +71,15 @@
                 width: 100%;
                 height: 90%;
                 border-radius: 10px;
-                box-shadow: 0px 0px 3px purple inset;
+                // box-shadow: 0px 0px 3px purple inset;
             }
         }
 
-        .name-prod{
+        .name-prod, .price-prod{
             width: 100px;
+            font-size: 15px;
+            // box-shadow: 0px 0px 3px purple inset;  
+            font-weight: bold;
         }
         .buttons-up-down {
             display: flex;
