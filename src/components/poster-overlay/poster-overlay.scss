@@ -1,6 +1,6 @@
 .container-poster {
     height: 450px;
-    width: 100%; 
+    width: 100%;
     background-image: url('../../assets/poster-overlay.jpg');
     background-size: cover;
 
@@ -25,7 +25,7 @@
         font-weight: 600;
         font-size: 24px;
 
-       .poster-subtitle-text1 {
+        .poster-subtitle-text1 {
             color: white;
             line-height: 1.2em;
             font-weight: 600;
@@ -37,5 +37,31 @@
             line-height: 1.2em;
             font-size: 18px;
         }
+    }
+}
+
+@media(max-width: 400px){
+
+    .container-poster {
+        height: 300px;
+        width: 100%;
+           
+        .poster-title {          
+            font-size: 18px;            
         }
+    
+        .poster-subtitle {          
+            font-size: 24px;
+    
+            .poster-subtitle-text1 {                
+                font-size: 20px;
+            }
+    
+            .poster-subtitle-text2 {               
+                font-size: 18px;
+            }
+        }
+    }
+
+
 }

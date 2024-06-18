@@ -7,7 +7,7 @@ const BUTTON_TYPE_CLASS = {
 
 export function Button({ children, typeButton, ...otherProps }) {
     return (
-        <button
+        <button 
             {...otherProps}
             className={`${BUTTON_TYPE_CLASS[typeButton]}`}>
             {children}

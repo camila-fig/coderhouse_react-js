@@ -39,7 +39,7 @@ export function CheckoutItem({ cartItem }) {
                 </div>
             </span>
            
-            <span>R$ {price},00</span>
+            <span className='price-prod'>R$ {price},00</span>
             <div className='remove-item' onClick={clearItem}>
                 {/* &#10005; */}
                 <IconTrash/>
