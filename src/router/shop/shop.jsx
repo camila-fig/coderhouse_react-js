@@ -3,7 +3,6 @@ import { CategorisPreview } from "../../components/categoria-preview/categoria-p
 import { CategoryShop } from "../category-shop/category-shop";
 import "./shop.scss"
 
-
 export function Shop() {
   return (
     <Routes>

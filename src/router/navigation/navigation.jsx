@@ -1,13 +1,15 @@
+import './navigation.scss'
 import { NavLink } from 'react-router-dom'
 import { Outlet } from 'react-router-dom'
 import { CartIcon } from '../../components/cart-icon/cart-icon'
 import barril from '../../assets/barril.png'
 import pesquisar from '../../assets/search.png'
-import './navigation.scss'
 import { Categories } from '../../components/categories/categories'
 import { CartDropdown } from '../../components/cart-dropdown/cart-dropdown'
 import { useContext } from 'react'
 import { CartContext } from '../../context/cartContext'
+import { UserContext } from '../../context/userContext'
+import { signOutAuthUser } from '../../utils/firebase'
 
 
 const categories = [
@@ -33,9 +35,10 @@ const categories = [
     }
 ]
 
-export function Navigation() { 
+export function Navigation() {
 
-const {isCartOpen} = useContext(CartContext) 
+    const { isCartOpen } = useContext(CartContext)
+    const { currentUser } = useContext(UserContext)
 
     return (
         <>
@@ -55,16 +58,24 @@ const {isCartOpen} = useContext(CartContext)
                 </div>
                 <div className="icon-container">
                     <p className="nav-link">Favoritos</p>
-                    <NavLink to="/auth" className="nav-link">Entrar</NavLink>
+                    {
+                        currentUser ? (
+                            <NavLink className="icon-container" onClick={signOutAuthUser}>
+                                <div className="nav-link">Sair</div>
+                            </NavLink>
+                        ) : (
+                            <NavLink to='/auth' className="icon-container">
+                                <div className="nav-link">Entrar</div>
+                            </NavLink>
+                        )
+                    }
                 </div>
                 <CartIcon />
-                
+
                 {/* faz o dropdown aparecer e sumir */}
-                {isCartOpen && <CartDropdown/>}
+                {isCartOpen && <CartDropdown />}
             </div>
-
-                <Categories categories={categories}/>
-
+            <Categories categories={categories} />
             <Outlet />
         </>
     )
