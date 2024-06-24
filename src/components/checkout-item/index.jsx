@@ -9,12 +9,10 @@ export function CheckoutItem({ cartItem }) {
 
     const { clearItemToCart, addItemToCart, removeItemToCart } = useContext(CartContext)
     const { name, imageUrl, price, quantity } = cartItem
-
     const clearItem = () => clearItemToCart(cartItem)
     const addItem = () => addItemToCart(cartItem)
     const removeItem = () => removeItemToCart(cartItem)
-
-
+ 
     return (
 
         <div className="checkout-item-container">
