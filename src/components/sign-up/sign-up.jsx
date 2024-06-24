@@ -1,9 +1,10 @@
 import { useState } from "react";
 import { Button } from "../button/button";
 import { FormInput } from "../form-input/form-input";
+import { createAuthUserWithEmailPassword, createUserDocumentFromAuth } from "../../utils/firebase";
 
 const defaultFormFields = {
-    nome: "",
+    displayName: "",
     email: "",
     senha: "",
     confirmeSenha: ""
@@ -12,20 +13,38 @@ const defaultFormFields = {
 export function SignUp() {
 
     const [formFilds, setFormFilds] = useState(defaultFormFields)
-    const { nome, email, senha, confirmeSenha } = formFilds
+    const { displayName, email, senha, confirmeSenha } = formFilds
 
     const handleChange = (event) => {
         const { name, value } = event.target
         setFormFilds({ ...formFilds, [name]: value })
     }
 
-    const handleSubmit = (event) => {
+    const handleSubmit = async (event) => {
         event.preventDefault()
         if (senha !== confirmeSenha) {
             alert("As senhas digitadas não são iguais")
             return
         }
-        setFormFilds(defaultFormFields)
+
+        //Para chamar a função de logar com email e senha
+        try {
+            const { user } = await createAuthUserWithEmailPassword(email, senha)
+            await createUserDocumentFromAuth(user, { displayName })
+            console.log(user)
+            setFormFilds(defaultFormFields)
+            alert("Sua conta foi cadastrada com sucesso\nVocê será direcionado para página inicial.")
+            setTimeout(function () {
+                window.location.href = "../../";
+            }, 1000);
+
+        } catch (erro) {
+            if (erro.code === 'auth/email-already-in-use') {
+                alert("E-mail já cadastrado em outro momento")
+            } else {
+                console.log("erro", erro)
+            }
+        }
     }
 
     return (
@@ -36,11 +55,11 @@ export function SignUp() {
                     label="Nome"
                     type="text"
                     requeried
-                    name="nome"
+                    name="displayName"
                     placeholder="digite seu nome"
                     autocomplete="off"
                     onChange={handleChange}
-                    value={nome}
+                    value={displayName}
                 />
                 <FormInput
                     label="E-mail"

@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Button } from "../button/button";
 import { FormInput } from "../form-input/form-input";
+import { signInAuthUserWithEmailPassword, signInWithGooglePopup } from "../../utils/firebase";
 import './sign-in.scss'
 
 const defaultFormFields = {
@@ -18,9 +19,26 @@ export function SignIn() {
         setFormFilds({ ...formFilds, [name]: value })
     }
 
-    const handleSubmit = (event) => {
+    const handleSubmit = async (event) => {
         event.preventDefault()
+        
+        try {
+            const { user } = await signInAuthUserWithEmailPassword(email, senha)
+            console.log(user)
+        } catch (e) {
+            console.log(e)
+        }
+
+        // console.log(formFilds)
         setFormFilds(defaultFormFields)
+    }
+
+    //Chamar a função do Firebase para logar com Google
+    const signInWithGoogle = async () => {
+        await signInWithGooglePopup()
+        setTimeout(function () {
+            window.location.href = "../../";
+        }, 1000);
     }
 
     return (
@@ -49,7 +67,7 @@ export function SignIn() {
                 <Button type="submit">
                     Entrar
                 </Button>
-                <Button type="button" typeButton="google">
+                <Button type="button" typeButton="google" onClick={signInWithGoogle}>
                     Entrar com conta Google
                 </Button>
             </form>
