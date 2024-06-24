@@ -8,7 +8,7 @@ export function CartIcon() {
     const { isCartOpen, setIsCartOpen, cartCount } = useContext(CartContext)
 
     const toggleIsCartOpen = () => setIsCartOpen(!isCartOpen)
-    console.log("valor no carrinho", cartCount)
+    // console.log("valor no carrinho", cartCount)
 
     return (
         <div className='cart-container' onClick={toggleIsCartOpen} disabled={cartCount === 0}>
