@@ -33,8 +33,8 @@ const removeCartItem = (cartItems, cartItemRemove) => {
             : cartItem
     )
 }
-
-const clearCartItem = (cartItems, cartItemToClear) => cartItems.filter(carItem => cartItem.id !== cartItemToClear.id) 
+    
+const clearCartItem = (cartItems, cartItemToClear) => cartItems.filter(cartItem => cartItem.id !== cartItemToClear.id) 
 
 export const CartContext = createContext({
     // iniciar com o carrinho fechado

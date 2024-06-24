@@ -1,3 +1,4 @@
+import emptcart from '../../assets/emptCart.png'
 import { CartContext } from '../../context/cartContext'
 import { useContext } from 'react'
 import carrinho from '../../assets/shopping-cart.png'
@@ -20,3 +21,16 @@ export function CartIcon() {
         </div>
     )
 } 
+
+export function EmptCart(){
+
+    return(
+        <div className="empt-cart">
+            <h3>Nada aqui!!!</h3>
+            <br />
+            <img src={emptcart} alt="empt cart" />
+        </div>
+    )
+
+
+}
