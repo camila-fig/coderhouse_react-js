@@ -15,7 +15,7 @@ const addCartItem = (cartItems, productToAdd) => {
                 : cartItem
         )
     }
-    //retornar um novo array com valor de cartIte modificado
+    //retornar um novo array com valor de cartItem modificado
     return [...cartItems, { ...productToAdd, quantity: 1 }]
 }
 
@@ -34,36 +34,34 @@ const removeCartItem = (cartItems, cartItemRemove) => {
     )
 }
 
-const clearCartItem = (cartItems, cartItemToClear) => cartItems.filter(carItem => cartItem.id !== cartItemToClear.id) 
+const clearCartItem = (cartItems, cartItemToClear) => cartItems.filter(cartItem => cartItem.id !== cartItemToClear.id)
 
 export const CartContext = createContext({
     // iniciar com o carrinho fechado
     isCartOpen: false,
-    setIsCartOpen: () => {},
+    setIsCartOpen: () => { },
     cartItems: [],
-    addItemToCart: () => {},
-    removeItem: () => {},
-    clearItemToCart: () => {},
+    addItemToCart: () => { },
+    removeItem: () => { },
+    clearItemToCart: () => { },
     cartCount: 0
-
 })
 
 export const CartProvaider = ({ children }) => {
     const [isCartOpen, setIsCartOpen] = useState(false)
     const [cartItems, setCartItems] = useState([])
     const [cartCount, setcartCount] = useState(0)
-    const [cartTotal, setCartTotal] =useState(0)
+    const [cartTotal, setCartTotal] = useState(0)
 
     useEffect(() => {
         const newCarCount = cartItems.reduce((total, carItem) => total + carItem.quantity, 0)
         setcartCount(newCarCount)
     }, [cartItems])
 
-   useEffect(() => {
-
-    const newCartCount = cartItems.reduce((total, cartItem) => total + cartItem.quantity * cartItem.price, 0)
-    setCartTotal(newCartCount)
-   }, [cartItems])
+    useEffect(() => {
+        const newCartCount = cartItems.reduce((total, cartItem) => total + cartItem.quantity * cartItem.price, 0)
+        setCartTotal(newCartCount)
+    }, [cartItems])
 
     const addItemToCart = (productToAdd) => {
         setCartItems(addCartItem(cartItems, productToAdd))
