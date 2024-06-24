@@ -1,13 +1,48 @@
- .checout-container {
+ .checkout-container {
      padding: 10px;
-text-align: center;
-     .header {
-         display: flex;
-     }
+     text-align: center;
 
-     .total-pay {
+     .checkout-title {
          font-size: 20px;
          font-weight: bold;
          margin-top: 20px;
+         margin-bottom: 20px;
+     }
+
+     .total-pay-container {
+         display: flex;
+         flex-direction: row;
+         justify-content: center;
+         align-items: center;
+         padding-top: 10px;
+         gap: 100px;
+
+         .total-pay {
+             font-size: 20px;
+             font-weight: bold;
+         }
+
+         .btn-logar {
+             font-size: 13px;
+             letter-spacing: 1px;
+             text-transform: uppercase;
+             justify-content: center;
+             padding: 2px;
+             font-weight: 800;
+             width: 100%;
+             background-color: #672042;
+             color: white;
+             border: solid 1px #672042;
+             border-radius: 5px;
+             padding: 10px;
+
+             &:hover {
+                 background-color: #a83a6f;
+             }
+         }
+
+         .btn-total-pay {
+             width: 30%
+         }
      }
  }
