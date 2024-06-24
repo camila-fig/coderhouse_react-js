@@ -2,11 +2,14 @@ import './style.scss'
 import { useContext } from 'react'
 import { CartContext } from '../../context/cartContext'
 import { CheckoutItem } from '../../components/checkout-item'
+
 import { Footer } from "../../components/footer/footer"
 import { UserContext } from '../../context/userContext'
 import { NavLink } from 'react-router-dom'
 
+
 export function Checkout() {
+
 
     const { cartItems, cartTotal } = useContext(CartContext)
     const { currentUser } = useContext(UserContext)
@@ -16,6 +19,7 @@ export function Checkout() {
             <>
                 <div className='checkout-container'>
                     <p className='checkout-title'>Os produtos selecionados foram os seguintes:</p>
+
                     {
                         cartItems.map((cartItem) => <CheckoutItem cartItem={cartItem} key={cartItem.id} />)
                     }
