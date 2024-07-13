@@ -53,20 +53,6 @@
         border-radius: 10px;
         display: flex;
         justify-content: space-around;
-
-        .nav-search-text {
-            width: 300px;
-            border: none;
-        }
-
-        .nav-icon-search {
-            cursor: pointer;
-            width: 25px;
-        }
-
-        input::placeholder {
-            color: lightgray;
-        }
     }
 
     .icon-container {

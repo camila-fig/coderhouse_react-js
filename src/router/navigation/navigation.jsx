@@ -1,16 +1,14 @@
 import './navigation.scss'
-import { NavLink } from 'react-router-dom'
-import { Outlet } from 'react-router-dom'
-import { CartIcon } from '../../components/cart-icon/cart-icon'
 import barril from '../../assets/barril.png'
-import pesquisar from '../../assets/search.png'
+import { NavLink, Outlet } from 'react-router-dom'
+import { CartIcon } from '../../components/cart-icon/cart-icon'
 import { Categories } from '../../components/categories/categories'
 import { CartDropdown } from '../../components/cart-dropdown/cart-dropdown'
 import { useContext } from 'react'
 import { CartContext } from '../../context/cartContext'
 import { UserContext } from '../../context/userContext'
 import { signOutAuthUser } from '../../utils/firebase'
-
+import { Search } from '../../components/search/search'
 
 const categories = [
     {
@@ -53,8 +51,7 @@ export function Navigation() {
                     </div>
                 </NavLink>
                 <div className='nav-search'>
-                    <input className='nav-search-text' type="search" placeholder='pesquisar um rótulo' />
-                    <img className='nav-icon-search' src={pesquisar} alt="Pesquisar" />
+                    <Search />
                 </div>
                 <div className="icon-container">
                     <p className="nav-link">Favoritos</p>
