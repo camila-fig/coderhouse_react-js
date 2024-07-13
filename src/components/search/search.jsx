@@ -24,7 +24,7 @@ export function Search() {
     return (
         <>
             <div>
-                <div>
+                <div className='search-container'>
                     <input
                         className='search-text'
                         type="search"
