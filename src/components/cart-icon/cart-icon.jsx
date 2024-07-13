@@ -1,15 +1,14 @@
-import emptcart from '../../assets/emptCart.png'
+import './cart-icon.scss'
 import { CartContext } from '../../context/cartContext'
 import { useContext } from 'react'
 import carrinho from '../../assets/shopping-cart.png'
-import './cart-icon.scss'
 
 export function CartIcon() {
 
     const { isCartOpen, setIsCartOpen, cartCount } = useContext(CartContext)
 
     const toggleIsCartOpen = () => setIsCartOpen(!isCartOpen)
-    console.log("valor no carrinho", cartCount)
+    // console.log("valor no carrinho", cartCount)
 
     return (
         <div className='cart-container' onClick={toggleIsCartOpen} disabled={cartCount === 0}>
@@ -21,16 +20,3 @@ export function CartIcon() {
         </div>
     )
 } 
-
-export function EmptCart(){
-
-    return(
-        <div className="empt-cart">
-            <h3>Nada aqui!!!</h3>
-            <br />
-            <img src={emptcart} alt="empt cart" />
-        </div>
-    )
-
-
-}
