@@ -12,6 +12,12 @@
     right: 15px;
     z-index: 5;
 
+    .img-empty-cart {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
     .cart-items {
         height: 240px;
         display: flex;
