@@ -31,12 +31,12 @@ export function SignUp() {
         try {
             const { user } = await createAuthUserWithEmailPassword(email, senha)
             await createUserDocumentFromAuth(user, { displayName })
-            console.log(user)
+            // console.log(user)
             setFormFilds(defaultFormFields)
             alert("Sua conta foi cadastrada com sucesso.")
-
         } catch (erro) {
             if (erro.code === 'auth/email-already-in-use') {
+                setFormFilds(defaultFormFields)
                 alert("E-mail já cadastrado em outro momento")
             } else {
                 console.log("erro", erro)

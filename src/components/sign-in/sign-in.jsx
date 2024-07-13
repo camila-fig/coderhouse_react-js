@@ -24,8 +24,10 @@ export function SignIn() {
 
         try {
             const { user } = await signInAuthUserWithEmailPassword(email, senha)
-            console.log(user)
+            alert("Você entrou na sua conta.")
+            // console.log(user)
         } catch (e) {
+            alert('E-mail ou senha inválida.')
             console.log(e)
         }
 
@@ -36,7 +38,7 @@ export function SignIn() {
     //Chamar a função do Firebase para logar com Google
     const signInWithGoogle = async () => {
         await signInWithGooglePopup()
-        alert("Você está na sua conta.")
+        alert("Você entrou na sua conta.")
     }
 
     return (
