@@ -1,0 +1,16 @@
+.empty-cart {
+    width: 90%;
+    border-radius: 15px;
+    margin: auto;
+    margin-top: 45%;
+
+    .empty-cart-image {
+        border-radius: 15px;
+        width: 100%;
+    }
+
+    .empty-cart-text {
+        text-align: center;
+        font-weight: 600;
+    }
+}
