@@ -15,7 +15,7 @@
         border-radius: 15px;
         box-shadow: 0px 0px 3px purple inset;
 
-        img {
+        .img-product {
             width: 100%;
             height: 95%;
         }
@@ -24,13 +24,12 @@
     .name-prod,
     .price-prod {
         width: 200px;
-        font-size: 20px;
-        // box-shadow: 0px 0px 3px purple inset;  
+        font-size: 18px;
         font-weight: bold;
     }
 
     .quantity {
-        font-size: 20px;
+        font-size: 18px;
         font-weight: bold;
     }
 
@@ -39,7 +38,8 @@
         column-gap: 20px;
         align-items: center;
 
-        div {
+        .icon-mais-menos {
+            width: 20px;
             cursor: pointer;
         }
     }
