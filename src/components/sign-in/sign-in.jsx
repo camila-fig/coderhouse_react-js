@@ -21,7 +21,7 @@ export function SignIn() {
 
     const handleSubmit = async (event) => {
         event.preventDefault()
-        
+
         try {
             const { user } = await signInAuthUserWithEmailPassword(email, senha)
             console.log(user)
@@ -36,9 +36,7 @@ export function SignIn() {
     //Chamar a função do Firebase para logar com Google
     const signInWithGoogle = async () => {
         await signInWithGooglePopup()
-        setTimeout(function () {
-            window.location.href = "../../";
-        }, 1000);
+        alert("Você está na sua conta.")
     }
 
     return (

@@ -33,10 +33,7 @@ export function SignUp() {
             await createUserDocumentFromAuth(user, { displayName })
             console.log(user)
             setFormFilds(defaultFormFields)
-            alert("Sua conta foi cadastrada com sucesso\nVocê será direcionado para página inicial.")
-            setTimeout(function () {
-                window.location.href = "../../";
-            }, 1000);
+            alert("Sua conta foi cadastrada com sucesso.")
 
         } catch (erro) {
             if (erro.code === 'auth/email-already-in-use') {
