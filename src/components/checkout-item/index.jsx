@@ -1,7 +1,9 @@
 import './style.scss'
 import { useContext } from "react"
 import { CartContext } from "../../context/cartContext"
-import { IconMais, IconMenos, IconTrash } from '../icons/icons'
+import trash from '../../assets/bin.png'
+import mais from '../../assets/mais.png'
+import menos from '../../assets/menos.png'
 
 export function CheckoutItem({ cartItem }) {
 
@@ -15,21 +17,21 @@ export function CheckoutItem({ cartItem }) {
     return (
         <div className="checkout-item-container">
             <div className='img-box'>
-                <img src={imageUrl} alt="" />
+                <img className='img-product' src={imageUrl} alt="Imagem do produto" />
             </div>
             <span className='name-prod'>{name}</span>
             <span className='buttons-up-down'>
                 <div onClick={removeItem}>
-                    <IconMenos />
+                    <img className='icon-mais-menos' src={menos} alt="Reduzir quantidade" />
                 </div>
                 <span className='quantity'>{quantity}</span>
                 <div onClick={addItem}>
-                    <IconMais />
+                    <img className='icon-mais-menos' src={mais} alt="Acrecentar quantidade" />
                 </div>
             </span>
             <span className='price-prod'>R$ {price},00</span>
             <div className='remove-item' onClick={clearItem}>
-                <IconTrash />
+                <img className='icon-trash' src={trash} alt="Deletar produto" />
             </div>
         </div>
     )
