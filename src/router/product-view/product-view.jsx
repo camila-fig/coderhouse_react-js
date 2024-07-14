@@ -3,15 +3,16 @@ import { useContext } from "react"
 import { CartContext } from "../../context/cartContext"
 import { useParams } from "react-router-dom";
 import { WINE_LIST } from "../../../wine-list";
+import { Footer } from "../../components/footer/footer"
 
 export function ProductView() {
 
     const { id: productId } = useParams()
-    const products = WINE_LIST[0].items.concat(WINE_LIST[1].items).concat(WINE_LIST[2].items).concat(WINE_LIST[3].items)
+    const products = WINE_LIST[0].items.concat(WINE_LIST[1].items).concat(WINE_LIST[2].items).concat(WINE_LIST[3].items).concat(WINE_LIST[4].items)
     const product = products[productId]
     const { name, price, imageUrl, description } = product
 
-    console.log(products)
+    // console.log(products)
 
     const { addItemToCart, clearItemToCart } = useContext(CartContext)
     const addProductToCart = () => addItemToCart(product)
@@ -32,6 +33,7 @@ export function ProductView() {
                     <button className="product-btn-remove" onClick={removeItem}>Remover do carrinho</button>
                 </div>
             </div>
+            <Footer /> 
         </>
     )
 }
