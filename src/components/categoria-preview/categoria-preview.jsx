@@ -1,6 +1,8 @@
-import { useContext } from "react"
+import { useContext, useEffect } from "react"
 import { CategoriesContext } from "../../context/categoriesContext"
 import { CategoryPreview } from "../category-preview/category-preview"
+import { addCollentionAdDocuments } from "../../utils/firebase"
+import { WINE_LIST } from "../../../wine-list"
 
 export function CategorisPreview() {
 
