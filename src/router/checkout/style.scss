@@ -9,6 +9,17 @@
          margin-bottom: 20px;
      }
 
+     .checkout-header {
+        width: 100%;
+        font-size: 18px;
+        font-weight: bold;
+        justify-content: space-around;
+        padding: 15px;
+        display: flex;
+        gap: 210px;
+        padding-left: 170px;
+     }
+
      .total-pay-container {
          display: flex;
          flex-direction: row;

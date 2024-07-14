@@ -14,6 +14,8 @@ export function CheckoutItem({ cartItem }) {
     const addItem = () => addItemToCart(cartItem)
     const removeItem = () => removeItemToCart(cartItem)
 
+    const subtotal = price*quantity
+
     return (
         <div className="checkout-item-container">
             <div className='img-box'>
@@ -29,7 +31,7 @@ export function CheckoutItem({ cartItem }) {
                     <img className='icon-mais-menos' src={mais} alt="Acrecentar quantidade" />
                 </div>
             </span>
-            <span className='price-prod'>R$ {price},00</span>
+            <span className='price-prod'>R$ {subtotal.toFixed(2).toString().replace(".", ",")}</span>
             <div className='remove-item' onClick={clearItem}>
                 <img className='icon-trash' src={trash} alt="Deletar produto" />
             </div>

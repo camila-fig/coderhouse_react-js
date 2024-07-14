@@ -17,9 +17,8 @@ export function CategoryShop() {
 
     // console.log(products)
     return (
-
         <>
-            <h1 className="titla-category">{category.toUpperCase()}</h1>
+            <h1 className="title-category">{category.toUpperCase()}</h1>
             <div className="category-shopp">
                 {
                     products && products.map((product) => <ProductCard key={product.id} product={product} />)

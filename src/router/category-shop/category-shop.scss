@@ -1,13 +1,16 @@
+.title-category {
+    padding: 40px 40px 20px 20px;
+    font-size: 20px;
+    font-weight: 600;
+}
 
-
-
-.category-shopp{
+.category-shopp {
+    padding-left: 20px;
+    padding-right: 20px;
     display: flex;
     align-items: center;
     justify-content: space-around;
     column-gap: 20px;
     flex-wrap: wrap;
     row-gap: 20px;
-
-
 }
