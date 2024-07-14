@@ -20,7 +20,7 @@ return (
                     cartItems.map((cartItem) => <CheckoutItem cartItem={cartItem} key={cartItem.id} />)
                 }
                 <div className='total-pay-container'>
-                    <p className='total-pay'>Valor total da compra: R$ {cartTotal},00</p>
+                    <p className='total-pay'>Valor total da compra: R$ {cartTotal.toFixed(2).toString().replace(".", ",")}</p>
                     <NavLink to='/auth'>
                         <div className='btn-logar'>Entre na sua conta para finalizar o pedido ou cadastre-se</div>
                     </NavLink>
@@ -34,7 +34,7 @@ return (
                     cartItems.map((cartItem) => <CheckoutItem cartItem={cartItem} key={cartItem.id} />)
                 }
                 <div className='total-pay-container'>
-                    <p className='total-pay'>Valor total da compra: R$ {cartTotal},00</p>
+                    <p className='total-pay'>Valor total da compra: R$ {cartTotal.toFixed(2).toString().replace(".", ",")}</p>
                     <button className='btn-total-pay'>Finalizar pedido</button>
                 </div>
             </div>}
