@@ -18,22 +18,22 @@ export function ProductView() {
     const addProductToCart = () => addItemToCart(product)
     const removeItem = () => clearItemToCart(product)
 
+    const parcelado = price/10
+
     return (
         <>
-            <div className="product-view-container">
+            <div className="product-container">
                 <p className="product-title">{name}</p>
-                <div className="product-container">
-                    <img className="product-image" src={imageUrl} alt="Foto do produto" />
-                    <p className="product-description">{description}</p>
-                    <div className="product-price-container">
-                        <p>Preço</p>
-                        <p className="product-price">R$ {price.toFixed(2).toString().replace(".", ",")}</p>
-                        </div>
-                    <button className="product-btn-add" onClick={addProductToCart}>Adicionar ao carrinho</button>
-                    <button className="product-btn-remove" onClick={removeItem}>Remover do carrinho</button>
+                <img className="product-image" src={imageUrl} alt="Foto do produto" />
+                <p className="product-description">{description}</p>
+                <div className="product-price-container">
+                    <p className="product-price">R$ {price.toFixed(2).toString().replace(".", ",")}</p>
+                    <p>Em até 10x de {parcelado.toFixed(2).toString().replace(".", ",")}, sem juros.</p>
                 </div>
+                <button className="product-btn-add" onClick={addProductToCart}>Adicionar ao carrinho</button>
+                <button className="product-btn-remove" onClick={removeItem}>Remover do carrinho</button>
             </div>
-            <Footer /> 
+            <Footer />
         </>
     )
 }

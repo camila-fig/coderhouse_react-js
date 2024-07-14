@@ -1,50 +1,51 @@
-.product-view-container {
- margin-left: 10%;
- margin-top: 50px;
+.product-container {
+    margin-left: 10%;
+    margin-top: 50px;
     width: 70%;
+    display: grid;
+    grid-template-columns: 30% 70%;
+    grid-template-rows: auto auto auto 10% 10%;
+    grid-template-areas:
+        "imagem titulo"
+        "imagem descricao"
+        "imagem preco"
+        "imagem botaoAdd"
+        "imagem botaoRemove";
+    row-gap: 20px;
 
     .product-title {
-        font-size: 26px;
+        grid-area: titulo;
+        font-size: 28px;
         font-weight: 600;
         text-align: center;
     }
 
-    .product-container {
-        display: grid;
-        grid-template-columns: 30% 70%;
-        grid-template-rows: auto auto 10% 10%;
-        grid-template-areas:
-            "imagem descricao"
-            "imagem preco"
-            "imagem botaoAdd"
-            "imagem botaoRemove";
-        row-gap: 20px;
+    .product-image {
+        grid-area: imagem;
+        width: 100%;
+    }
 
-        .product-image {
-            grid-area: imagem;
-            width: 100%;
-        }
+    .product-description {
+        grid-area: descricao;
+        margin-top: 10px;
+        font-size: 18px;
+    }
 
-        .product-description {
-            grid-area: descricao;
-            margin-top: 50px;
+    .product-price-container {
+        grid-area: preco;
+
+        .product-price {
             font-size: 18px;
+            font-weight: 800;
+            color: #672042;
         }
+    }
 
-        .product-price-container {
-            grid-area: preco;
+    .product-btn-add {
+        grid-area: botaoAdd;
+    }
 
-            .product-price {
-                font-weight: 600;
-            }
-        }
-
-        .product-btn-add {
-            grid-area: botaoAdd;
-        }
-
-        .product-btn-remove {
-            grid-area: botaoRemove;
-        }
+    .product-btn-remove {
+        grid-area: botaoRemove;
     }
 }
